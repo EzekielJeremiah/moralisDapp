@@ -8,8 +8,8 @@ async function login() {
   if (!user) {
     try {
       user = await Moralis.authenticate({ signingMessage: "Hello World!" });
-      console.log(user);
-      console.log(user.get("ethAddress"));
+      document.write(user);
+      document.write(user.get("ethAddress"));
     } catch (error) {
       console.log(error);
     }
