@@ -20,6 +20,7 @@
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
     <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
   </head>
+    <body onload="load()">
   <div class="home">
     <img src="https://miro.medium.com/max/1400/1*QJDoZf4xrYAUKPPGcWcqRw.jpeg" style="width: 500px; position:absolute; height: 50vh">
     <div class="btn" class="container" style="position: absolute;top: 100px;">
@@ -29,8 +30,12 @@
     <button id="btn-logout" class="btn btn-primary">Logout</button>
       </div>
     </div>
-  <body>
-    
+
+      <script>
+        function load(){
+          alert('Only metamask in use for now');
+        }
+      </script>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
